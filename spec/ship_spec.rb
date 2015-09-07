@@ -2,6 +2,8 @@ require 'Ship'
 
 describe Ship do
 
+
+
   it "should be floating when created" do
   	expect(subject).to be_floating
   end
@@ -26,6 +28,10 @@ describe Ship do
   # it 'Ship can respond with status "Sunk"' do
   # 	expect(subject.status).to eq("Sunk")
   # end
+
+  it 'can respond with location' do
+    expect(subject).to respond_to :coordinates
+  end
 
   it 'can report being hit' do
   	expect(subject.hit).to eq("Hit")
