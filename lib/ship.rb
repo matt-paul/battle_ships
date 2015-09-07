@@ -13,6 +13,7 @@ def sunk?
 end
 
 def hit
+	"Hit"
 end
 
 def status

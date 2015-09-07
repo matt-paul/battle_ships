@@ -28,7 +28,7 @@ describe Ship do
   # end
 
   it 'can report being hit' do
-  	
+  	expect(subject.hit).to eq("Hit")
   end
 
   xit "Ship sinks if each part is hit"
